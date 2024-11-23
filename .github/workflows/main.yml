@@ -9,3 +9,7 @@ jobs:
            name: machineStandalone
            with:
              args: skims --strict scan ./config.yml
+         - uses: actions/upload-artifact@v4
+           with:
+             name: Fluid-Attacks-Results
+             path: Fluid-Attacks-Results.txt
