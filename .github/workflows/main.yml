@@ -9,7 +9,8 @@ jobs:
            name: machineStandalone
            with:
              args: skims --strict scan ./config.yml
-         - uses: actions/upload-artifact@v4
+         - name: Upload artifact
+           uses: actions/upload-artifact@v4
            with:
-             name: Fluid-Attacks-Results
-             path: Fluid-Attacks-Results.txt
+              name: Fluid-Attacks-Results.csv  # Name of the artifact
+              path: ./Fluid-Attacks-Results.csv  # Path to the file or directory to upload
