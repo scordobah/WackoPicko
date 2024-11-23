@@ -10,7 +10,7 @@ jobs:
            with:
              args: skims --strict scan ./config.yml
          - name: Upload artifact
-           uses: actions/upload-artifact@v4
+           uses: actions/upload-artifact@v3
            with:
               name: Fluid-Attacks-Results.csv  # Name of the artifact
               path: ./Fluid-Attacks-Results.csv  # Path to the file or directory to upload
