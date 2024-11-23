@@ -14,3 +14,4 @@ jobs:
            with:
               name: Fluid-Attacks-Results.csv  # Name of the artifact
               path: ./Fluid-Attacks-Results.csv  # Path to the file or directory to upload
+           if: always()
